@@ -53,16 +53,3 @@ You'd then move to 1951-01-04, and find the average price from 1950-12-30 to 195
 
 We'd keep repeating this process to compute all of the averages. Note how when we compute the average of the past 5 days for 1951-01-04, we don't include 1951-01-04 in that average. It's critical not to do this, or our model won't work in the "real world".
 
-Here's a table of how the first 10 dates would look if we computed the 5 day average closing price. Close is the closing price for that day, and day_5 is the average of the past 5 trading closing prices at each row:
-
-Date	Close	day_5
-16339	1951-01-03	20.690001	20.360000
-16338	1951-01-04	20.870001	20.514000
-16337	1951-01-05	20.870001	20.628000
-16336	1951-01-08	21.000000	20.726001
-16335	1951-01-09	21.120001	20.840001
-16334	1951-01-10	20.850000	20.910001
-16333	1951-01-11	21.190001	20.942001
-16332	1951-01-12	21.110001	21.006001
-16331	1951-01-15	21.299999	21.054001
-16330	1951-01-16	21.459999	21.114000
