@@ -10,6 +10,7 @@ df["Date"] = pd.to_datetime(df["Date"])
 
 #a Boolean series that tells you if each item in the Date column is after 2015-04-01
 after = df["Date"] > datetime(year=2015, month=4, day=1)
+# Sort the dataframe on the Date column in ascending order
 df = df.sort_values(by = ["Date"], ascending=True)
 
 # 3 indicators to compute, and generate a different column for each one
